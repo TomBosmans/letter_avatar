@@ -6,6 +6,7 @@ class LetterAvatarTest < Minitest::Test
   end
 
   def test_it_does_something_useful
+    binding.pry
     assert false
   end
 end

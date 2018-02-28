@@ -7,10 +7,6 @@ module Configuration
     '#FF9800', '#FF5722'
   ].freeze
 
-  def configuration
-    yield(self) if block_given?
-  end
-
   def size
     @size ||= '1000x1000'
   end
