@@ -1,81 +1,83 @@
 # frozen_string_literal: true
 
-module Configuration
-  DEFAULT_COLOR_PALETTE = [
-    '#F44336', '#E91E63', '#E91E63', '#E91E63', '#E91E63', '#E91E63', '#03A9F4',
-    '#03A9F4', '#03A9F4', '#4CAF50', '#4CAF50', '#4CAF50', '#FFEB3B', '#FFC107',
-    '#FF9800', '#FF5722'
-  ].freeze
+module LetterAvatar
+  class Configuration
+    DEFAULT_COLOR_PALETTE = [
+      '#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3', '#03A9F4',
+      '#00BCD4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107',
+      '#FF9800', '#FF5722'
+    ].freeze
 
-  def size
-    @size ||= '1000x1000'
-  end
+    def self.size
+      @size ||= '1000x1000'
+    end
 
-  def size=(value)
-    @size = value
-  end
+    def self.size=(value)
+      @size = value
+    end
 
-  def pointsize
-    @pointsize ||= 540
-  end
+    def self.pointsize
+      @pointsize ||= 540
+    end
 
-  def pointsize=(value)
-    @pointsize = value
-  end
+    def self.pointsize=(value)
+      @pointsize = value
+    end
 
-  def font
-    @font ||= 'Helvetica'
-  end
+    def self.font
+      @font ||= 'Helvetica'
+    end
 
-  def font=(value)
-    @font = value
-  end
+    def self.font=(value)
+      @font = value
+    end
 
-  def gravity
-    @gravity ||= 'Center'
-  end
+    def self.gravity
+      @gravity ||= 'Center'
+    end
 
-  def gravity=(value)
-    @gravity = value
-  end
+    def self.gravity=(value)
+      @gravity = value
+    end
 
-  def annotate
-    @annotate ||= '-0+80'
-  end
+    def self.annotate
+      @annotate ||= '-0+80'
+    end
 
-  def annotate=(value)
-    @annotate = value
-  end
+    def self.annotate=(value)
+      @annotate = value
+    end
 
-  def depth
-    @depth ||= 8
-  end
+    def self.depth
+      @depth ||= 8
+    end
 
-  def depth=(value)
-    @depth = value
-  end
+    def self.depth=(value)
+      @depth = value
+    end
 
-  def extension
-    @extension ||= 'jpg'
-  end
+    def self.extension
+      @extension ||= 'jpg'
+    end
 
-  def extension=(value)
-    @extension = value
-  end
+    def self.extension=(value)
+      @extension = value
+    end
 
-  def color_palette
-    @color_palette ||= DEFAULT_COLOR_PALETTE
-  end
+    def self.color_palette
+      @color_palette ||= DEFAULT_COLOR_PALETTE
+    end
 
-  def color_palette=(value)
-    @color_palette = value
-  end
+    def self.color_palette=(value)
+      @color_palette = value
+    end
 
-  def fill
-    @fill ||= '#FFFFFFCC'
-  end
+    def self.fill
+      @fill ||= '#FFFFCC'
+    end
 
-  def fill=(value)
-    @fill = value
+    def self.fill=(value)
+      @fill = value
+    end
   end
 end
