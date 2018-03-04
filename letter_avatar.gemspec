@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "letter_avatar"
   spec.version       = LetterAvatar::VERSION
   spec.authors       = ["TomBosmans"]
-  spec.email         = ["t.bosse@hotmail.com"]
+  spec.email         = ["tom.94.bosmans@gmail.com"]
 
   spec.summary       = "Google style letter avatars"
   spec.description   = "Google style letter avatars"

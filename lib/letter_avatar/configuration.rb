@@ -1,12 +1,16 @@
 # frozen_string_literal: true
 
 module LetterAvatar
-  class Configuration
+  module Configuration
     DEFAULT_COLOR_PALETTE = [
       '#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3', '#03A9F4',
       '#00BCD4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107',
       '#FF9800', '#FF5722'
     ].freeze
+
+    def self.root
+      File.dirname __dir__
+    end
 
     def self.size
       @size ||= '1000x1000'
@@ -25,7 +29,7 @@ module LetterAvatar
     end
 
     def self.font
-      @font ||= 'Helvetica'
+      @font ||= File.join(root, '/assets/fonts/Roboto-Medium.ttf')
     end
 
     def self.font=(value)
@@ -78,6 +82,14 @@ module LetterAvatar
 
     def self.fill=(value)
       @fill = value
+    end
+
+    def self.path
+      @path ||= ''
+    end
+
+    def self.path=(value)
+      @path = value
     end
   end
 end

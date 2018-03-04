@@ -53,7 +53,13 @@ module LetterAvatar
     end
 
     def generate_file_name
-      "#{SecureRandom.hex}.#{Configuration.extension}"
+      "#{file_path}#{SecureRandom.hex}.#{Configuration.extension}"
+    end
+
+    def file_path
+      path = Configuration.path
+      path += '/' unless path.empty? || path[-1] == '/'
+      path
     end
   end
 end
