@@ -28,7 +28,7 @@ end
 
 Start creating avatars
 ```ruby
-avatar = LetterAvatar::Avatar.new('hallo world')
+avatar = LetterAvatar::Avatar.new('hello world')
 avatar.generate
 ```
 
